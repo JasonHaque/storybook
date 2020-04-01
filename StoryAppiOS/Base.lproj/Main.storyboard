@@ -120,32 +120,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xey-3V-YLW">
-                                <rect key="frame" x="20" y="108.00000000000001" width="335" height="178.33333333333337"/>
+                                <rect key="frame" x="20" y="108.00000000000001" width="335" height="190.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlu-CL-oEb">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="akJ-gP-Xr3"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zSg-Ij-6mO">
-                                        <rect key="frame" x="0.0" y="54" width="335" height="34"/>
+                                        <rect key="frame" x="0.0" y="60" width="335" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CeD-5N-rA2"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHB-lE-fjy">
-                                        <rect key="frame" x="0.0" y="108" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="120" width="335" height="30"/>
                                         <state key="normal" title="Log in"/>
                                         <connections>
                                             <action selector="LogInTapped:" destination="ChP-S2-luA" eventType="touchUpInside" id="hKD-Jl-TIO"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctp-0f-J2U">
-                                        <rect key="frame" x="0.0" y="158" width="335" height="20.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="170" width="335" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="vHB-lE-fjy" firstAttribute="height" secondItem="nlu-CL-oEb" secondAttribute="height" multiplier="0.75" id="QPe-ge-8HW"/>
+                                    <constraint firstItem="vHB-lE-fjy" firstAttribute="height" secondItem="nlu-CL-oEb" secondAttribute="height" multiplier="0.75" id="WNQ-D3-9W3"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -174,7 +184,19 @@
                     <view key="view" contentMode="scaleToFill" id="bNX-ek-nJj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVg-3a-Xl3">
+                                <rect key="frame" x="110.66666666666669" y="395.66666666666669" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tVg-3a-Xl3" firstAttribute="centerY" secondItem="bNX-ek-nJj" secondAttribute="centerY" id="MKc-qi-VSU"/>
+                            <constraint firstItem="tVg-3a-Xl3" firstAttribute="centerX" secondItem="bNX-ek-nJj" secondAttribute="centerX" id="P7N-AM-vol"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ld6-rV-BoU"/>
                     </view>
                 </viewController>
