@@ -10,21 +10,17 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var SignUpEmail: UITextField!
+    @IBOutlet weak var SignUpPassword: UITextField!
+    @IBOutlet weak var ConfirmPassword: UITextField!
+    @IBOutlet weak var SignUpErrorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        SignUpErrorLabel.text=""
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func SignUpTapped(_ sender: Any) {
     }
-    */
-
+    
 }

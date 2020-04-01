@@ -78,6 +78,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdh-Mh-NiI">
                                         <rect key="frame" x="0.0" y="162" width="335" height="30"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="SignUpTapped:" destination="ysw-CF-gcS" eventType="touchUpInside" id="vwU-44-xKg"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyB-II-PiL">
                                         <rect key="frame" x="0.0" y="212" width="335" height="20.333333333333343"/>
@@ -97,6 +100,12 @@
                         <viewLayoutGuide key="safeArea" id="CBP-q8-Uob"/>
                     </view>
                     <navigationItem key="navigationItem" id="pT5-uf-AdN"/>
+                    <connections>
+                        <outlet property="ConfirmPassword" destination="53p-18-PpR" id="UCj-CQ-Mar"/>
+                        <outlet property="SignUpEmail" destination="63O-Z7-Ia9" id="lby-Ky-qaO"/>
+                        <outlet property="SignUpErrorLabel" destination="tyB-II-PiL" id="f4c-as-WKS"/>
+                        <outlet property="SignUpPassword" destination="wtA-jn-TpB" id="KWy-39-35G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IAD-vb-p76" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
