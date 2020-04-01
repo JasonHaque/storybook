@@ -150,6 +150,21 @@
             </objects>
             <point key="canvasLocation" x="1952.1739130434785" y="-337.5"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="n3D-tg-xwb">
+            <objects>
+                <viewController id="A7U-bf-bYh" customClass="HomeViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bNX-ek-nJj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ld6-rV-BoU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWV-UG-y9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3192" y="-166"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="EXT-Dm-hBW">
             <objects>
