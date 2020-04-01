@@ -29,11 +29,17 @@ class LogInViewController: UIViewController {
             LogInErrorLabel.text = error
             return
         }
+        LogInErrorLabel.text = ""
     }
     
     func checkError(_ email:String, _ password:String) -> String{
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         if(email == "" || password == ""){
             return "Fill up the fields properly"
+        }
+        else if(!emailPred.evaluate(with: email)){
+            return "Not an email address"
         }
         
         return ""
