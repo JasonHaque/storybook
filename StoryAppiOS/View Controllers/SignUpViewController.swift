@@ -30,7 +30,7 @@ class SignUpViewController: UIViewController {
             SignUpErrorLabel.text = error
             return
         }
-        
+        SignUpErrorLabel.text=""
         
     }
     
