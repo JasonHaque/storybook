@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "064BB85C-0AA1-4547-B070-EB8D2FB5A6D7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "677A6FAE-DA82-4D1E-A485-5541E5B56B75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoryAppiOS/View Controllers/LogInViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "LogInViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "677A6FAE-DA82-4D1E-A485-5541E5B56B75 - 1b53621a8d213337"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryAppiOS.LogInViewController.LogInErrorLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryAppiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jason/Desktop/StoryAppiOS/StoryAppiOS/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "677A6FAE-DA82-4D1E-A485-5541E5B56B75 - 816e888fd587d73b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryAppiOS.LogInViewController.LogInErrorLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryAppiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jason/Desktop/StoryAppiOS/StoryAppiOS/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "677A6FAE-DA82-4D1E-A485-5541E5B56B75 - 4a7c9feaf133d434"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryAppiOS.LogInViewController.LogInErrorLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryAppiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jason/Desktop/StoryAppiOS/StoryAppiOS/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "677A6FAE-DA82-4D1E-A485-5541E5B56B75 - ae318415221a0f8b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryAppiOS.LogInViewController.LogInErrorLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "StoryAppiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jason/Desktop/StoryAppiOS/StoryAppiOS/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "677A6FAE-DA82-4D1E-A485-5541E5B56B75 - 95d57dd108da8858"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryAppiOS.LogInViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StoryAppiOS.LogInViewController"
+                  moduleName = "StoryAppiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jason/Desktop/StoryAppiOS/StoryAppiOS/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "375">
+               </Location>
+               <Location
+                  uuid = "677A6FAE-DA82-4D1E-A485-5541E5B56B75 - 93dff65f7bca867"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryAppiOS.LogInViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoryAppiOS.LogInViewController&gt;"
+                  moduleName = "StoryAppiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jason/Desktop/StoryAppiOS/StoryAppiOS/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "301">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
