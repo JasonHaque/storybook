@@ -21,6 +21,27 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func SignUpTapped(_ sender: Any) {
+        let email = SignUpEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = SignUpPassword.text!.trimmingCharacters(in: .newlines)
+        let confirm = ConfirmPassword.text!.trimmingCharacters(in: .newlines)
+        let error = checkError(email,password,confirm)
+        
+        if(error != ""){
+            SignUpErrorLabel.text = error
+            return
+        }
+        
+        
+    }
+    
+    func checkError(_ email:String,_ password:String,_ confirm:String)-> String{
+        if(email=="" || password=="" || confirm==""){
+            return "Fill up the fields properly"
+        }
+        else if(password != confirm){
+            return "Password do not match"
+        }
+        return ""
     }
     
 }
