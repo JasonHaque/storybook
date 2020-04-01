@@ -126,6 +126,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHB-lE-fjy">
                                         <rect key="frame" x="0.0" y="108" width="335" height="30"/>
                                         <state key="normal" title="Log in"/>
+                                        <connections>
+                                            <action selector="LogInTapped:" destination="ChP-S2-luA" eventType="touchUpInside" id="hKD-Jl-TIO"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctp-0f-J2U">
                                         <rect key="frame" x="0.0" y="158" width="335" height="20.333333333333343"/>
@@ -145,6 +148,11 @@
                         <viewLayoutGuide key="safeArea" id="xBm-0W-paM"/>
                     </view>
                     <navigationItem key="navigationItem" id="asF-Me-LoT"/>
+                    <connections>
+                        <outlet property="EmailAddress" destination="nlu-CL-oEb" id="R9Y-r6-haX"/>
+                        <outlet property="LogInErrorLabel" destination="ctp-0f-J2U" id="9Ua-L3-SxH"/>
+                        <outlet property="Password" destination="zSg-Ij-6mO" id="lpt-Wn-E3T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8K-3x-G7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
