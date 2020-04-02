@@ -198,6 +198,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="LogOutTapped:" destination="A7U-bf-bYh" eventType="touchUpInside" id="JaC-qO-ERq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -211,6 +214,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ld6-rV-BoU"/>
                     </view>
+                    <connections>
+                        <outlet property="WelcomeLabel" destination="tVg-3a-Xl3" id="JcR-VL-CEY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWV-UG-y9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
