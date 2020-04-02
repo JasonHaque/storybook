@@ -198,6 +198,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="New Story"/>
+                                        <connections>
+                                            <segue destination="eh7-ba-KmJ" kind="show" id="UoB-bA-BEl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-wl-NKE">
                                         <rect key="frame" x="0.0" y="64" width="335" height="30"/>
@@ -232,16 +235,17 @@
             </objects>
             <point key="canvasLocation" x="4133.6000000000004" y="-166.25615763546799"/>
         </scene>
-        <!--View Controller-->
+        <!--New Story View Controller-->
         <scene sceneID="5AP-QC-jmF">
             <objects>
-                <viewController id="eh7-ba-KmJ" sceneMemberID="viewController">
+                <viewController id="eh7-ba-KmJ" customClass="NewStoryViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t7y-ik-Tfw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="lie-vV-BD4"/>
                     </view>
+                    <navigationItem key="navigationItem" id="c0A-2f-1WJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z6-0L-B4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
