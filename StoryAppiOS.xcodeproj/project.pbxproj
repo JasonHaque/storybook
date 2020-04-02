@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,16 +64,23 @@
 				C206FA5E382C9BD949DEDC78 /* Pods-StoryAppiOS.debug.xcconfig */,
 				BF125C8043F271330A183B49 /* Pods-StoryAppiOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		964955392435FC03000A2AE3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				9653E79C243491A500A22640 /* LogInViewController.swift */,
+				9653E79E243491B600A22640 /* SignUpViewController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		9653E79B2434917D00A22640 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				964955392435FC03000A2AE3 /* Authentication */,
 				96B0DA652431297F00D68238 /* ViewController.swift */,
-				9653E79C243491A500A22640 /* LogInViewController.swift */,
-				9653E79E243491B600A22640 /* SignUpViewController.swift */,
 				9653E7A02434991B00A22640 /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
