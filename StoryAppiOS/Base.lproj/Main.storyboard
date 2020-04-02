@@ -180,7 +180,7 @@
         <!--Home View Controller-->
         <scene sceneID="n3D-tg-xwb">
             <objects>
-                <viewController id="A7U-bf-bYh" customClass="HomeViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" id="A7U-bf-bYh" customClass="HomeViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bNX-ek-nJj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -36,6 +36,8 @@ class LogInViewController: UIViewController {
                 //self.showError(message: "Could not log in")
                 self.LogInErrorLabel.text = error!.localizedDescription
             }
+            self.transitionHome()
+            
             
         }
     }
@@ -52,7 +54,11 @@ class LogInViewController: UIViewController {
         
         return ""
     }
-    
+    func transitionHome(){
+        let homeView = storyboard?.instantiateViewController(identifier: "HomeView") as? HomeViewController
+        view.window?.rootViewController = homeView
+        view.window?.makeKeyAndVisible()
+    }
    
 
 }
