@@ -37,7 +37,7 @@ class SignUpViewController: UIViewController {
                 //self.showError("Could not create user")
                 self.SignUpErrorLabel.text = error!.localizedDescription
             }
-            //self.transitionHome()
+            self.transitionHome()
         }
         
     }
@@ -57,6 +57,12 @@ class SignUpViewController: UIViewController {
             return "Password do not match"
         }
         return ""
+    }
+    
+    func transitionHome(){
+        let homeView = storyboard?.instantiateViewController(identifier: "HomeView") as? HomeViewController
+        view.window?.rootViewController = homeView
+        view.window?.makeKeyAndVisible()
     }
     
 }
