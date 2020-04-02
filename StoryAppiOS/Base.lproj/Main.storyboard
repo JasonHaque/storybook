@@ -114,7 +114,7 @@
         <!--Log In View Controller-->
         <scene sceneID="rd2-vD-Ysk">
             <objects>
-                <viewController id="ChP-S2-luA" customClass="LogInViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInView" id="ChP-S2-luA" customClass="LogInViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lMe-bx-enI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

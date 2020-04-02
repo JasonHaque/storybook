@@ -26,9 +26,16 @@ class HomeViewController: UIViewController {
         do {
           try firebaseAuth.signOut()
             print("Signed out")
+            self.transitionStart()
         } catch let signOutError as NSError {
           print ("Error signing out: %@", signOutError)
         }
         
+    }
+    
+    func transitionStart(){
+        let homeView = storyboard?.instantiateViewController(identifier: "LogInView") as? LogInViewController
+        view.window?.rootViewController = homeView
+        view.window?.makeKeyAndVisible()
     }
 }
