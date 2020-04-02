@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
     @IBOutlet weak var EmailAddress: UITextField!
@@ -30,6 +31,13 @@ class LogInViewController: UIViewController {
             return
         }
         LogInErrorLabel.text = ""
+        Auth.auth().signIn(withEmail: email, password: password){(result, error) in
+            if(error != nil){
+                //self.showError(message: "Could not log in")
+                self.LogInErrorLabel.text = error!.localizedDescription
+            }
+            
+        }
     }
     
     func checkError(_ email:String, _ password:String) -> String{

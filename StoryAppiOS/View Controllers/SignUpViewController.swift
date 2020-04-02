@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
@@ -31,6 +32,13 @@ class SignUpViewController: UIViewController {
             return
         }
         SignUpErrorLabel.text=""
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            if(error != nil){
+                //self.showError("Could not create user")
+                self.SignUpErrorLabel.text = error!.localizedDescription
+            }
+            //self.transitionHome()
+        }
         
     }
     
