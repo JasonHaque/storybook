@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9647161F2434FC5E00B82DC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9647161E2434FC5E00B82DC0 /* GoogleService-Info.plist */; };
+		9649553B24366DB9000A2AE3 /* NewStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649553A24366DB9000A2AE3 /* NewStoryViewController.swift */; };
 		9653E79D243491A500A22640 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653E79C243491A500A22640 /* LogInViewController.swift */; };
 		9653E79F243491B600A22640 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653E79E243491B600A22640 /* SignUpViewController.swift */; };
 		9653E7A12434991B00A22640 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653E7A02434991B00A22640 /* HomeViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		9647161E2434FC5E00B82DC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9649553A24366DB9000A2AE3 /* NewStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoryViewController.swift; sourceTree = "<group>"; };
 		9653E79C243491A500A22640 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		9653E79E243491B600A22640 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9653E7A02434991B00A22640 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				964955392435FC03000A2AE3 /* Authentication */,
 				96B0DA652431297F00D68238 /* ViewController.swift */,
 				9653E7A02434991B00A22640 /* HomeViewController.swift */,
+				9649553A24366DB9000A2AE3 /* NewStoryViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9649553B24366DB9000A2AE3 /* NewStoryViewController.swift in Sources */,
 				9653E79D243491A500A22640 /* LogInViewController.swift in Sources */,
 				96B0DA662431297F00D68238 /* ViewController.swift in Sources */,
 				96B0DA622431297F00D68238 /* AppDelegate.swift in Sources */,
