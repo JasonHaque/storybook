@@ -12,8 +12,10 @@ class NewStoryViewController: UIViewController {
 
     @IBOutlet weak var StoryNameField: UITextField!
     @IBOutlet weak var StoryContent: UITextField!
+    @IBOutlet weak var ErrorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        ErrorLabel.text = ""
     }
     
 
