@@ -33,7 +33,7 @@ class NewStoryViewController: UIViewController {
             return
         }
         ErrorLabel.text=""
-        ref.child("StoryData").child(Auth.auth().currentUser!.uid).child(storyName).setValue(storyContent)
+    ref.child("StoryData").child(Auth.auth().currentUser!.uid).child(storyName).setValue(storyContent)
         
     }
     
