@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+
 
 class NewStoryViewController: UIViewController {
 
     @IBOutlet weak var StoryNameField: UITextField!
     @IBOutlet weak var StoryContent: UITextField!
     @IBOutlet weak var ErrorLabel: UILabel!
+    var ref = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
         ErrorLabel.text = ""
@@ -29,6 +33,8 @@ class NewStoryViewController: UIViewController {
             return
         }
         ErrorLabel.text=""
+        ref.child("StoryData").child(Auth.auth().currentUser!.uid).child(storyName).setValue(storyContent)
+        
     }
     
     func checkErrors(_ storyName:String,_ storyContent:String)-> String{
