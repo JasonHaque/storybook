@@ -24,6 +24,11 @@ class NewStoryViewController: UIViewController {
         let storyContent = StoryContent.text!.trimmingCharacters(in: .whitespaces)
         
         let error = checkErrors(storyName,storyContent)
+        if(error != ""){
+            ErrorLabel.text = error
+            return
+        }
+        ErrorLabel.text=""
     }
     
     func checkErrors(_ storyName:String,_ storyContent:String)-> String{
