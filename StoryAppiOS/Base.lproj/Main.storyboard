@@ -259,6 +259,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQD-Fm-fnU">
                                         <rect key="frame" x="0.0" y="108" width="335" height="30"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="SaveButtonTapped:" destination="eh7-ba-KmJ" eventType="touchUpInside" id="KuJ-Ax-5Vo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -272,6 +275,10 @@
                         <viewLayoutGuide key="safeArea" id="lie-vV-BD4"/>
                     </view>
                     <navigationItem key="navigationItem" id="c0A-2f-1WJ"/>
+                    <connections>
+                        <outlet property="StoryContent" destination="ZpN-Ax-nbM" id="03T-ms-iKI"/>
+                        <outlet property="StoryNameField" destination="nfs-AS-A6I" id="y3a-TH-MRG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z6-0L-B4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
