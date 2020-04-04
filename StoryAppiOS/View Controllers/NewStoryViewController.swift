@@ -16,6 +16,7 @@ class NewStoryViewController: UIViewController {
     @IBOutlet weak var StoryNameField: UITextField!
     @IBOutlet weak var StoryContent: UITextField!
     @IBOutlet weak var ErrorLabel: UILabel!
+    
     var ref = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,13 @@ class NewStoryViewController: UIViewController {
         }
         ErrorLabel.text=""
     ref.child("StoryData").child(Auth.auth().currentUser!.uid).child(storyName).setValue(storyContent)
+        
+    }
+    
+    @IBAction func ClearButtonTapped(_ sender: Any) {
+        StoryNameField.text = ""
+        StoryContent.text = ""
+        return
         
     }
     
