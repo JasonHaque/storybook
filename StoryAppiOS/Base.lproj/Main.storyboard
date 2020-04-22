@@ -393,6 +393,9 @@
                         <viewLayoutGuide key="safeArea" id="Slc-44-CN6"/>
                     </view>
                     <navigationItem key="navigationItem" id="o2w-WY-2co"/>
+                    <connections>
+                        <outlet property="publicStoriesTable" destination="Fu5-8y-syn" id="qjL-Hl-wTa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQF-uq-Wre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

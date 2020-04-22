@@ -9,7 +9,8 @@
 import UIKit
 
 class AllStoriesViewController: UIViewController {
-
+    @IBOutlet weak var publicStoriesTable: UITableView!
+    var storiesList = [StoryModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
