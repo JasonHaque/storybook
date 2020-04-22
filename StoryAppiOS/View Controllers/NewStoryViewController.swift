@@ -62,7 +62,7 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
         ErrorLabel.text=""
         let pickerOption = pickerData[OptionPicker.selectedRow(inComponent: 0)]
         print(pickerOption)
-        saveStory(storyName,storyContent)
+        saveStory(storyName,storyContent,pickerOption)
         
     }
         @IBAction func ClearButtonTapped(_ sender: Any) {
@@ -79,13 +79,14 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
         return""
     }
     
-    func saveStory(_ storyName:String,_ storyContent:String){
+    func saveStory(_ storyName:String,_ storyContent:String,_ pickerOption:String){
         let email = (Auth.auth().currentUser?.email)!.split(separator: "@")
         let user = String(email[0])
         let key = ref.child("StoryData").child(user).childByAutoId().key
         let storyData = [
             "storyName" : storyName,
             "storyContent" : storyContent,
+            "privacy" : pickerOption,
             "Id" : key
         ]
         ref.child("StoryData").child(user).child(key!).setValue(storyData)
