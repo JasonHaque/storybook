@@ -19,7 +19,7 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     @IBOutlet weak var OptionPicker: UIPickerView!
     var pickerData: [String] = [String]()
-    var pickerOption = ""
+    
     
     var ref = Database.database().reference()
     override func viewDidLoad() {
@@ -45,7 +45,7 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-           pickerOption = pickerData[row] as String
+           
        }
     
 
@@ -60,6 +60,7 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
             return
         }
         ErrorLabel.text=""
+        let pickerOption = pickerData[OptionPicker.selectedRow(inComponent: 0)]
         print(pickerOption)
         saveStory(storyName,storyContent)
         
