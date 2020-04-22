@@ -17,6 +17,8 @@ class NewStoryViewController: UIViewController {
     @IBOutlet weak var StoryContent: UITextField!
     @IBOutlet weak var ErrorLabel: UILabel!
     
+    @IBOutlet weak var OptionPicker: UIPickerView!
+    
     var ref = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()

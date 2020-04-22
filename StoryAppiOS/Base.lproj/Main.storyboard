@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eFc-c9-hOo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eFc-c9-hOo">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartView" id="BYZ-38-t0r" customClass="ViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,7 +252,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-hw-s3Y">
-                                <rect key="frame" x="20" y="128" width="335" height="228.33333333333337"/>
+                                <rect key="frame" x="20" y="127.99999999999997" width="335" height="464.33333333333326"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Story Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfs-AS-A6I">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
@@ -264,22 +264,25 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmx-Jo-Fxs">
+                                        <rect key="frame" x="0.0" y="108" width="335" height="216"/>
+                                    </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQD-Fm-fnU">
-                                        <rect key="frame" x="0.0" y="108" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="344" width="335" height="30"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="SaveButtonTapped:" destination="eh7-ba-KmJ" eventType="touchUpInside" id="KuJ-Ax-5Vo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLY-D4-nYO">
-                                        <rect key="frame" x="0.0" y="158" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="394" width="335" height="30"/>
                                         <state key="normal" title="Clear"/>
                                         <connections>
                                             <action selector="ClearButtonTapped:" destination="eh7-ba-KmJ" eventType="touchUpInside" id="Sba-yb-jk8"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKl-mR-V6I">
-                                        <rect key="frame" x="0.0" y="208" width="335" height="20.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="444" width="335" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -298,6 +301,7 @@
                     <navigationItem key="navigationItem" id="c0A-2f-1WJ"/>
                     <connections>
                         <outlet property="ErrorLabel" destination="YKl-mR-V6I" id="j94-Bg-wiB"/>
+                        <outlet property="OptionPicker" destination="zmx-Jo-Fxs" id="emc-KV-4mA"/>
                         <outlet property="StoryContent" destination="ZpN-Ax-nbM" id="03T-ms-iKI"/>
                         <outlet property="StoryNameField" destination="nfs-AS-A6I" id="y3a-TH-MRG"/>
                     </connections>

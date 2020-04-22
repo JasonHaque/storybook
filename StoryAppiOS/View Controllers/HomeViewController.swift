@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
     }
     
     func transitionStart(){
-        let homeView = storyboard?.instantiateViewController(identifier: "LogInView") as? LogInViewController
+        let homeView = storyboard?.instantiateViewController(identifier: "StartView") as? ViewController
         view.window?.rootViewController = homeView
         view.window?.makeKeyAndVisible()
     }
