@@ -333,7 +333,7 @@
                                 <rect key="frame" x="20" y="168.33333333333331" width="335" height="589.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="168" id="J0t-5o-ndx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="168" id="J0t-5o-ndx" customClass="ViewControllerTableViewCell" customModule="StoryAppiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="335" height="168"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J0t-5o-ndx" id="6qf-YA-P2V">
@@ -371,6 +371,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="VMb-PK-5jA" secondAttribute="trailing" id="Tde-Sn-p7S"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="AuthorNameCell" destination="Gom-Ih-pLC" id="bVi-c3-ipi"/>
+                                            <outlet property="StoryContentCell" destination="Lyg-4d-9ih" id="dwX-3l-Gwd"/>
+                                            <outlet property="StoryNameCell" destination="5PL-TL-HDu" id="hoP-C9-TEL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
