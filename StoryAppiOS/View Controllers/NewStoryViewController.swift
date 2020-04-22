@@ -34,7 +34,7 @@ class NewStoryViewController: UIViewController {
             return
         }
         ErrorLabel.text=""
-    ref.child("StoryData").child(Auth.auth().currentUser!.uid).child(storyName).setValue(storyContent)
+        saveStory(storyName,storyContent)
         
     }
     
@@ -50,5 +50,17 @@ class NewStoryViewController: UIViewController {
             return "Fill up the fields please"
         }
         return""
+    }
+    
+    func saveStory(_ storyName:String,_ storyContent:String){
+        let email = (Auth.auth().currentUser?.email)!.split(separator: "@")
+        let user = String(email[0])
+        let key = ref.child("StoryData").child(user).childByAutoId().key
+        let storyData = [
+            "storyName" : storyName,
+            "storyContent" : storyContent,
+            "Id" : key
+        ]
+        ref.child("StoryData").child(user).child(key!).setValue(storyData)
     }
 }
