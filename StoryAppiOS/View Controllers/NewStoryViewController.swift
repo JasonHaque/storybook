@@ -11,20 +11,44 @@ import Firebase
 import FirebaseDatabase
 
 
-class NewStoryViewController: UIViewController {
+class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var StoryNameField: UITextField!
     @IBOutlet weak var StoryContent: UITextField!
     @IBOutlet weak var ErrorLabel: UILabel!
     
     @IBOutlet weak var OptionPicker: UIPickerView!
+    var pickerData: [String] = [String]()
+    var pickerOption = ""
     
     var ref = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
         ErrorLabel.text = ""
+        pickerData = ["Public","Private"]
+        
+        OptionPicker.dataSource = self
+        OptionPicker.delegate = self
+
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int{
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView,
+                    numberOfRowsInComponent component: Int) -> Int{
+        return pickerData.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
+        return pickerData[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+           pickerOption = pickerData[row] as String
+       }
+    
+
 
     @IBAction func SaveButtonTapped(_ sender: Any) {
         let storyName = StoryNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -36,11 +60,11 @@ class NewStoryViewController: UIViewController {
             return
         }
         ErrorLabel.text=""
+        print(pickerOption)
         saveStory(storyName,storyContent)
         
     }
-    
-    @IBAction func ClearButtonTapped(_ sender: Any) {
+        @IBAction func ClearButtonTapped(_ sender: Any) {
         StoryNameField.text = ""
         StoryContent.text = ""
         return
@@ -65,4 +89,6 @@ class NewStoryViewController: UIViewController {
         ]
         ref.child("StoryData").child(user).child(key!).setValue(storyData)
     }
+    
+    
 }
