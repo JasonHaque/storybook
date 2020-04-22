@@ -63,6 +63,9 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
         let pickerOption = pickerData[OptionPicker.selectedRow(inComponent: 0)]
         print(pickerOption)
         saveStory(storyName,storyContent,pickerOption)
+        if(pickerOption == "Public"){
+            saveToAll(storyName,storyContent)
+        }
         
     }
         @IBAction func ClearButtonTapped(_ sender: Any) {
@@ -90,6 +93,22 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
             "Id" : key
         ]
         ref.child("StoryData").child(user).child(key!).setValue(storyData)
+        ErrorLabel.text = "Data Saved"
+    }
+    
+    func saveToAll(_ storyName:String,_ storyContent:String){
+        let key = ref.child("Public Stories").childByAutoId().key
+        let email = (Auth.auth().currentUser?.email)!.split(separator: "@")
+        let user = String(email[0])
+        let storyData = [
+            "storyName" : storyName,
+            "storyContent" : storyContent,
+            "Author" : user,
+            "Id" : key
+        ]
+        ref.child("Public Stories").child(key!).setValue(storyData)
+        
+        
     }
     
     
