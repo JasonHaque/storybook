@@ -7,24 +7,34 @@
 //
 
 import UIKit
+import Firebase
 
 class MyStoriesViewController: UIViewController {
 
+    @IBOutlet weak var myStoryTableView: UITableView!
+    
+    var myStoryList = [MyStoryModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let email = (Auth.auth().currentUser?.email)!.split(separator: "@")
+        let user = String(email[0])
+        let ref = Database.database().reference().child("StoryData").child(user)
+        ref.observe(DataEventType.value) { (DataSnapshot) in
+            if DataSnapshot.childrenCount > 0{
+                self.myStoryList.removeAll()
+                for stories in DataSnapshot.children.allObjects as! [DataSnapshot]{
+                    let storyObj = stories.value as? [String : AnyObject]
+                    let storyName = storyObj?["storyName"]
+                    let storyContent = storyObj?["storyContent"]
+                    let Id = storyObj?["Id"]
+                    let privacy = storyObj?["privacy"]
+                    let mystory = MyStoryModel(storyName: storyName as! String?, storyContent: storyContent as! String?, privacy:  privacy as! String?, Id: Id as! String?)
+                    
+                    self.myStoryList.append(mystory)
+                }
+                self.myStoryTableView.reloadData()
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -494,6 +494,9 @@
                         <viewLayoutGuide key="safeArea" id="xJi-9m-wC5"/>
                     </view>
                     <navigationItem key="navigationItem" id="ynY-14-Q0D"/>
+                    <connections>
+                        <outlet property="myStoryTableView" destination="PkW-Jj-nM7" id="wBr-i6-MIp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25q-R6-kPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
