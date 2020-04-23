@@ -35,7 +35,7 @@ class AllStoriesViewController: UIViewController,UITableViewDelegate,UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var ref = Database.database().reference().child("Public Stories").observe(DataEventType.value, with: {(DataSnapshot) in
+        let ref = Database.database().reference().child("Public Stories").observe(DataEventType.value, with: {(DataSnapshot) in
             if DataSnapshot.childrenCount>0{
                 self.storiesList.removeAll()
                 for stories in DataSnapshot.children.allObjects as! [DataSnapshot]{
