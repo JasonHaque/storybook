@@ -12,6 +12,7 @@ import Firebase
 class AllStoriesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var publicStoriesTable: UITableView!
     var storiesList = [StoryModel]()
+    var dataTosend : String = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return storiesList.count
@@ -28,6 +29,15 @@ class AllStoriesViewController: UIViewController,UITableViewDelegate,UITableView
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let story = storiesList[indexPath.row]
+        dataTosend = story.storyContent!
+        self.performSegue(withIdentifier: "showSinglePublicStory", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let info = segue.destination as! SinglePublicStoryViewController
+        info.mystory = dataTosend
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
         return 200

@@ -383,7 +383,6 @@
                                             <outlet property="AuthorNameCell" destination="Gom-Ih-pLC" id="bVi-c3-ipi"/>
                                             <outlet property="StoryContentCell" destination="Lyg-4d-9ih" id="dwX-3l-Gwd"/>
                                             <outlet property="StoryNameCell" destination="5PL-TL-HDu" id="hoP-C9-TEL"/>
-                                            <segue destination="l9f-te-xHO" kind="show" id="l8V-t8-gc8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -408,36 +407,45 @@
                     <navigationItem key="navigationItem" id="o2w-WY-2co"/>
                     <connections>
                         <outlet property="publicStoriesTable" destination="Fu5-8y-syn" id="qjL-Hl-wTa"/>
+                        <segue destination="GQp-Xf-631" kind="show" identifier="showSinglePublicStory" id="vI8-Vu-j9m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQF-uq-Wre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5278" y="110"/>
         </scene>
-        <!--Story View Controller-->
-        <scene sceneID="d7A-DV-Kxw">
+        <!--Single Public Story View Controller-->
+        <scene sceneID="oGz-Ub-s7W">
             <objects>
-                <viewController id="l9f-te-xHO" customClass="StoryViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gK8-re-44C">
+                <viewController id="GQp-Xf-631" customClass="SinglePublicStoryViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J5E-Kt-c5t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yp-6A-yfB">
-                                <rect key="frame" x="140" y="130" width="41" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWW-i6-2PP">
+                                <rect key="frame" x="20" y="108" width="335" height="650"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="oFH-8u-8Yo"/>
+                        <constraints>
+                            <constraint firstItem="wWW-i6-2PP" firstAttribute="leading" secondItem="fOY-Hq-GJ0" secondAttribute="leading" constant="20" id="2f2-AA-yxZ"/>
+                            <constraint firstItem="fOY-Hq-GJ0" firstAttribute="trailing" secondItem="wWW-i6-2PP" secondAttribute="trailing" constant="20" id="33U-QF-XSc"/>
+                            <constraint firstItem="fOY-Hq-GJ0" firstAttribute="bottom" secondItem="wWW-i6-2PP" secondAttribute="bottom" constant="20" id="T2O-Lh-mYt"/>
+                            <constraint firstItem="wWW-i6-2PP" firstAttribute="top" secondItem="fOY-Hq-GJ0" secondAttribute="top" constant="20" id="vnc-bT-Ke7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fOY-Hq-GJ0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="M9M-an-NrG"/>
+                    <navigationItem key="navigationItem" id="6au-Nl-n0K"/>
+                    <connections>
+                        <outlet property="SngleStory" destination="wWW-i6-2PP" id="iVj-93-2Wu"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K5o-Cx-c9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RsC-28-6iI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6655" y="417"/>
+            <point key="canvasLocation" x="6599" y="-184"/>
         </scene>
         <!--My Stories View Controller-->
         <scene sceneID="Ica-Yu-toH">
@@ -502,7 +510,6 @@
                                             <outlet property="myStoryContent" destination="l4p-JJ-8r7" id="Xea-le-DtI"/>
                                             <outlet property="myStoryName" destination="MoL-dX-FEz" id="Ehl-r7-emY"/>
                                             <outlet property="myStoryPrivacy" destination="alH-4R-JUP" id="WcG-Qh-u5q"/>
-                                            <segue destination="l9f-te-xHO" kind="show" id="ACK-fF-iMU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -570,7 +577,4 @@
             <point key="canvasLocation" x="3191.1999999999998" y="-166.25615763546799"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ACK-fF-iMU"/>
-    </inferredMetricsTieBreakers>
 </document>
