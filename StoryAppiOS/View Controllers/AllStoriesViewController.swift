@@ -28,6 +28,11 @@ class AllStoriesViewController: UIViewController,UITableViewDelegate,UITableView
         
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        return 200
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var ref = Database.database().reference().child("Public Stories").observe(DataEventType.value, with: {(DataSnapshot) in
