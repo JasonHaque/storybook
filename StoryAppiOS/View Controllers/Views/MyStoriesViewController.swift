@@ -9,11 +9,31 @@
 import UIKit
 import Firebase
 
-class MyStoriesViewController: UIViewController {
+class MyStoriesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var myStoryTableView: UITableView!
     
     var myStoryList = [MyStoryModel]()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myStoryList.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyStoryCell", for: indexPath) as! MyStoryTableViewCell
+        let myStory : MyStoryModel
+        myStory = myStoryList[indexPath.row]
+        cell.myStoryName.text = myStory.storyName
+        cell.myStoryContent.text = myStory.storyContent
+        cell.myStoryPrivacy.text = myStory.privacy
+        return cell
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        return 200
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let email = (Auth.auth().currentUser?.email)!.split(separator: "@")
