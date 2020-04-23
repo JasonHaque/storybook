@@ -434,7 +434,7 @@
                                 <rect key="frame" x="0.0" y="168" width="375" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyStoryCell" rowHeight="236" id="jDm-95-fFw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyStoryCell" rowHeight="236" id="jDm-95-fFw" customClass="MyStoryTableViewCell" customModule="StoryAppiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="236"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jDm-95-fFw" id="SBK-5q-TFq">
@@ -472,6 +472,11 @@
                                                 <constraint firstItem="sJX-Zl-NkH" firstAttribute="leading" secondItem="SBK-5q-TFq" secondAttribute="leading" constant="10" id="ryy-aa-AdU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myStoryContent" destination="l4p-JJ-8r7" id="Xea-le-DtI"/>
+                                            <outlet property="myStoryName" destination="MoL-dX-FEz" id="Ehl-r7-emY"/>
+                                            <outlet property="myStoryPrivacy" destination="alH-4R-JUP" id="WcG-Qh-u5q"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
