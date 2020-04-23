@@ -84,16 +84,40 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		964C31DF2451707F006B300F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9649553A24366DB9000A2AE3 /* NewStoryViewController.swift */,
+				96B0DA652431297F00D68238 /* ViewController.swift */,
+				9653E7A02434991B00A22640 /* HomeViewController.swift */,
+				96299EDA2437A8FA00D3B73B /* AllStoriesViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		964C31E02451709A006B300F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				964C31DD2450F901006B300F /* StoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		964C31E1245170AC006B300F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				964C31DB2450F7A3006B300F /* ViewControllerTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		9653E79B2434917D00A22640 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				964C31E1245170AC006B300F /* TableViewCells */,
+				964C31E02451709A006B300F /* Models */,
+				964C31DF2451707F006B300F /* Views */,
 				964955392435FC03000A2AE3 /* Authentication */,
-				96B0DA652431297F00D68238 /* ViewController.swift */,
-				9653E7A02434991B00A22640 /* HomeViewController.swift */,
-				9649553A24366DB9000A2AE3 /* NewStoryViewController.swift */,
-				96299EDA2437A8FA00D3B73B /* AllStoriesViewController.swift */,
-				964C31DB2450F7A3006B300F /* ViewControllerTableViewCell.swift */,
-				964C31DD2450F901006B300F /* StoryModel.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
