@@ -214,6 +214,9 @@
                                         <rect key="frame" x="0.0" y="150" width="335" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="My Stories"/>
+                                        <connections>
+                                            <segue destination="36j-w4-Klp" kind="show" id="z6B-ZB-Emj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-wl-NKE">
                                         <rect key="frame" x="0.0" y="226" width="335" height="30"/>
@@ -313,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z6-0L-B4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5108" y="-555"/>
+            <point key="canvasLocation" x="5278" y="-698"/>
         </scene>
         <!--All Stories View Controller-->
         <scene sceneID="k6V-C7-bzh">
@@ -408,7 +411,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQF-uq-Wre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5108" y="133.74384236453201"/>
+            <point key="canvasLocation" x="5278" y="110"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ica-Yu-toH">
+            <objects>
+                <viewController id="36j-w4-Klp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9gv-FB-mmv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xJi-9m-wC5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ynY-14-Q0D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25q-R6-kPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5278" y="894"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EXT-Dm-hBW">
