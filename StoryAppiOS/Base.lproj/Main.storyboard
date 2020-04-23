@@ -378,6 +378,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Sac-eU-ckX" id="yOT-br-OLe"/>
+                                    <outlet property="delegate" destination="Sac-eU-ckX" id="Aah-31-kAo"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

@@ -9,9 +9,25 @@
 import UIKit
 import Firebase
 
-class AllStoriesViewController: UIViewController {
+class AllStoriesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var publicStoriesTable: UITableView!
     var storiesList = [StoryModel]()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return storiesList.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StoryCell", for: indexPath) as! ViewControllerTableViewCell
+        let story : StoryModel
+        story = storiesList[indexPath.row]
+        cell.StoryNameCell.text = story.storyName
+        cell.AuthorNameCell.text = story.Author
+        cell.StoryContentCell.text = story.storyContent
+        
+        return cell
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var ref = Database.database().reference().child("Public Stories").observe(DataEventType.value, with: {(DataSnapshot) in
