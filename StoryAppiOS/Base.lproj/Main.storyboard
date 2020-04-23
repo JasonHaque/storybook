@@ -192,7 +192,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="luB-Qj-Om3">
-                                <rect key="frame" x="20" y="568" width="335" height="180"/>
+                                <rect key="frame" x="20" y="492" width="335" height="256"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1p-Ol-ubH">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
@@ -210,8 +210,13 @@
                                             <segue destination="Sac-eU-ckX" kind="show" id="WRs-WD-Xdc"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOI-pw-SzX">
+                                        <rect key="frame" x="0.0" y="150" width="335" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="My Stories"/>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-wl-NKE">
-                                        <rect key="frame" x="0.0" y="150" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="226" width="335" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="iaF-9c-5wo"/>
                                         </constraints>

@@ -16,9 +16,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         WelcomeLabel.text = "Welcome " + (Auth.auth().currentUser?.email)!
         
-        
-
     }
+    
     
 
     @IBAction func LogOutTapped(_ sender: Any) {
