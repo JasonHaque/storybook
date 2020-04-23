@@ -383,6 +383,7 @@
                                             <outlet property="AuthorNameCell" destination="Gom-Ih-pLC" id="bVi-c3-ipi"/>
                                             <outlet property="StoryContentCell" destination="Lyg-4d-9ih" id="dwX-3l-Gwd"/>
                                             <outlet property="StoryNameCell" destination="5PL-TL-HDu" id="hoP-C9-TEL"/>
+                                            <segue destination="l9f-te-xHO" kind="show" id="l8V-t8-gc8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -412,6 +413,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQF-uq-Wre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5278" y="110"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="d7A-DV-Kxw">
+            <objects>
+                <viewController id="l9f-te-xHO" customClass="StoryViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gK8-re-44C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yp-6A-yfB">
+                                <rect key="frame" x="140" y="130" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oFH-8u-8Yo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M9M-an-NrG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5o-Cx-c9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6655" y="417"/>
         </scene>
         <!--My Stories View Controller-->
         <scene sceneID="Ica-Yu-toH">
@@ -476,6 +502,7 @@
                                             <outlet property="myStoryContent" destination="l4p-JJ-8r7" id="Xea-le-DtI"/>
                                             <outlet property="myStoryName" destination="MoL-dX-FEz" id="Ehl-r7-emY"/>
                                             <outlet property="myStoryPrivacy" destination="alH-4R-JUP" id="WcG-Qh-u5q"/>
+                                            <segue destination="l9f-te-xHO" kind="show" id="ACK-fF-iMU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -543,4 +570,7 @@
             <point key="canvasLocation" x="3191.1999999999998" y="-166.25615763546799"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ACK-fF-iMU"/>
+    </inferredMetricsTieBreakers>
 </document>
