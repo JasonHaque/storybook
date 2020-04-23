@@ -341,30 +341,30 @@
                                 <rect key="frame" x="20" y="174.33333333333331" width="335" height="583.66666666666674"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="168" id="J0t-5o-ndx" customClass="ViewControllerTableViewCell" customModule="StoryAppiOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="168" id="J0t-5o-ndx" customClass="ViewControllerTableViewCell" customModule="StoryAppiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.333332061767578" width="335" height="168"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J0t-5o-ndx" id="6qf-YA-P2V">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="168"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="309" height="168"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VMb-PK-5jA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="168"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="309" height="168"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PL-TL-HDu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="42.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="309" height="42.666666666666664"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gom-Ih-pLC">
-                                                            <rect key="frame" x="0.0" y="62.666666666666671" width="335" height="42.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="62.666666666666671" width="309" height="42.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-4d-9ih">
-                                                            <rect key="frame" x="0.0" y="125.33333333333333" width="335" height="42.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="125.33333333333333" width="309" height="42.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -434,30 +434,30 @@
                                 <rect key="frame" x="0.0" y="168" width="375" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyStoryCell" rowHeight="236" id="jDm-95-fFw" customClass="MyStoryTableViewCell" customModule="StoryAppiOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyStoryCell" rowHeight="236" id="jDm-95-fFw" customClass="MyStoryTableViewCell" customModule="StoryAppiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="236"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jDm-95-fFw" id="SBK-5q-TFq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="236"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sJX-Zl-NkH">
-                                                    <rect key="frame" x="10" y="10" width="355" height="216"/>
+                                                    <rect key="frame" x="10" y="10" width="329" height="216"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoL-dX-FEz">
-                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="58.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="329" height="58.666666666666664"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4p-JJ-8r7">
-                                                            <rect key="frame" x="0.0" y="78.666666666666671" width="355" height="58.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="78.666666666666671" width="329" height="58.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alH-4R-JUP">
-                                                            <rect key="frame" x="0.0" y="157.33333333333334" width="355" height="58.666666666666657"/>
+                                                            <rect key="frame" x="0.0" y="157.33333333333334" width="329" height="58.666666666666657"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
