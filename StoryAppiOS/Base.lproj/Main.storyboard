@@ -549,30 +549,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXP-n2-2lK">
-                                <rect key="frame" x="20" y="108" width="335" height="650"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Qn-rN-eHe">
+                                <rect key="frame" x="20" y="118" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEs-Le-Ji3">
+                                <rect key="frame" x="20" y="172" width="335" height="526"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUf-Xv-ag2">
+                                <rect key="frame" x="20" y="728" width="335" height="30"/>
+                                <state key="normal" title="Publish"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="vXP-n2-2lK" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="fEC-Wu-Dz2"/>
-                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="vXP-n2-2lK" secondAttribute="trailing" constant="20" id="iw1-aj-WHT"/>
-                            <constraint firstItem="vXP-n2-2lK" firstAttribute="top" secondItem="9Ww-g7-nwT" secondAttribute="top" constant="20" id="n4I-zf-nxR"/>
-                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="bottom" secondItem="vXP-n2-2lK" secondAttribute="bottom" constant="20" id="qEI-dS-q9d"/>
+                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="bottom" secondItem="AEs-Le-Ji3" secondAttribute="bottom" constant="80" id="3XU-yh-aOK"/>
+                            <constraint firstItem="HUf-Xv-ag2" firstAttribute="top" secondItem="AEs-Le-Ji3" secondAttribute="bottom" constant="30" id="67R-wb-B6P"/>
+                            <constraint firstItem="HUf-Xv-ag2" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="DQZ-qn-wFA"/>
+                            <constraint firstItem="5Qn-rN-eHe" firstAttribute="top" secondItem="9Ww-g7-nwT" secondAttribute="top" constant="30" id="Iuv-Ob-lNO"/>
+                            <constraint firstItem="AEs-Le-Ji3" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="N4p-m6-gwK"/>
+                            <constraint firstItem="AEs-Le-Ji3" firstAttribute="top" secondItem="5Qn-rN-eHe" secondAttribute="bottom" constant="20" id="RRk-Gm-mWh"/>
+                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="HUf-Xv-ag2" secondAttribute="trailing" constant="20" id="ScW-Lp-alZ"/>
+                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="AEs-Le-Ji3" secondAttribute="trailing" constant="20" id="fvX-GZ-E4y"/>
+                            <constraint firstItem="5Qn-rN-eHe" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="lyQ-rm-K4N"/>
+                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="5Qn-rN-eHe" secondAttribute="trailing" constant="20" id="rni-le-XXM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ww-g7-nwT"/>
                     </view>
                     <navigationItem key="navigationItem" id="1lh-Dd-B3X"/>
-                    <connections>
-                        <outlet property="UserStory" destination="vXP-n2-2lK" id="UMq-VJ-r13"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TI-ah-cW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6570" y="843"/>
+            <point key="canvasLocation" x="6568.8000000000002" y="842.36453201970448"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EXT-Dm-hBW">

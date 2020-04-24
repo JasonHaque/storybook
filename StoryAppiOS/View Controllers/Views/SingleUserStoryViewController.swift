@@ -12,9 +12,11 @@ class SingleUserStoryViewController: UIViewController {
 
     @IBOutlet weak var UserStory: UILabel!
     var strStory:String? = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UserStory.text = strStory
+        
     }
     
 
