@@ -10,16 +10,28 @@ import UIKit
 
 class SingleUserStoryViewController: UIViewController {
 
-    @IBOutlet weak var UserStory: UILabel!
+    
+    @IBOutlet weak var strStoryField: UITextField!
+    
+    @IBOutlet weak var strStoryContentField: UITextField!
+   
+    @IBOutlet weak var publishButton: UIButton!
+    
     var strStory:String? = ""
+    var strName : String? = ""
+    var strPrivacy : String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserStory.text = strStory
+        publishButton.isHidden = true
+        
         
     }
     
 
-   
+    @IBAction func PublishTapped(_ sender: Any) {
+        
+    }
+    
 
 }

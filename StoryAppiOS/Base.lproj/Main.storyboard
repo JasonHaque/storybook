@@ -562,6 +562,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUf-Xv-ag2">
                                 <rect key="frame" x="20" y="728" width="335" height="30"/>
                                 <state key="normal" title="Publish"/>
+                                <connections>
+                                    <action selector="PublishTapped:" destination="kaq-cm-2fh" eventType="touchUpInside" id="Bpx-7B-hmW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -580,6 +583,11 @@
                         <viewLayoutGuide key="safeArea" id="9Ww-g7-nwT"/>
                     </view>
                     <navigationItem key="navigationItem" id="1lh-Dd-B3X"/>
+                    <connections>
+                        <outlet property="publishButton" destination="HUf-Xv-ag2" id="7aJ-nt-cIY"/>
+                        <outlet property="strStoryContentField" destination="AEs-Le-Ji3" id="hF4-a9-ELt"/>
+                        <outlet property="strStoryField" destination="5Qn-rN-eHe" id="5ua-O7-fDI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TI-ah-cW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
