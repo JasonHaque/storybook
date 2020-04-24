@@ -534,22 +534,38 @@
                     <navigationItem key="navigationItem" id="ynY-14-Q0D"/>
                     <connections>
                         <outlet property="myStoryTableView" destination="PkW-Jj-nM7" id="wBr-i6-MIp"/>
+                        <segue destination="kaq-cm-2fh" kind="show" identifier="ShowSingle" id="Vbe-UM-jh9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25q-R6-kPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5277.6000000000004" y="893.3497536945813"/>
+            <point key="canvasLocation" x="5319" y="896"/>
         </scene>
-        <!--View Controller-->
+        <!--Single User Story View Controller-->
         <scene sceneID="vhq-YS-EKV">
             <objects>
-                <viewController id="kaq-cm-2fh" sceneMemberID="viewController">
+                <viewController id="kaq-cm-2fh" customClass="SingleUserStoryViewController" customModule="StoryAppiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kuk-FU-c2t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXP-n2-2lK">
+                                <rect key="frame" x="20" y="108" width="335" height="650"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vXP-n2-2lK" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="fEC-Wu-Dz2"/>
+                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="vXP-n2-2lK" secondAttribute="trailing" constant="20" id="iw1-aj-WHT"/>
+                            <constraint firstItem="vXP-n2-2lK" firstAttribute="top" secondItem="9Ww-g7-nwT" secondAttribute="top" constant="20" id="n4I-zf-nxR"/>
+                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="bottom" secondItem="vXP-n2-2lK" secondAttribute="bottom" constant="20" id="qEI-dS-q9d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ww-g7-nwT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1lh-Dd-B3X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TI-ah-cW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
