@@ -14,8 +14,9 @@ class SingleUserStoryViewController: UIViewController {
     
     @IBOutlet weak var strStoryField: UITextField!
     
-    @IBOutlet weak var strStoryContentField: UITextField!
-   
+  
+    @IBOutlet weak var StoryField: UITextView!
+    
     @IBOutlet weak var publishButton: UIButton!
     
     var strStory:String? = ""
@@ -26,7 +27,7 @@ class SingleUserStoryViewController: UIViewController {
         super.viewDidLoad()
         publishButton.isHidden = true
         strStoryField.text = strName
-        strStoryContentField.text = strStory
+        StoryField.text = strStory
         
         if(strPrivacy == "Private"){
             publishButton.isHidden = false
@@ -37,7 +38,7 @@ class SingleUserStoryViewController: UIViewController {
 
     @IBAction func PublishTapped(_ sender: Any) {
         let storyName = strStoryField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let storyContent = strStoryContentField.text!.trimmingCharacters(in: .newlines)
+        let storyContent = StoryField.text!.trimmingCharacters(in: .newlines)
         saveToAll(storyName, storyContent)
     }
     

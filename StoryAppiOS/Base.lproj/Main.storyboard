@@ -554,11 +554,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEs-Le-Ji3">
-                                <rect key="frame" x="20" y="172" width="335" height="526"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUf-Xv-ag2">
                                 <rect key="frame" x="20" y="728" width="335" height="30"/>
                                 <state key="normal" title="Publish"/>
@@ -566,26 +561,34 @@
                                     <action selector="PublishTapped:" destination="kaq-cm-2fh" eventType="touchUpInside" id="Bpx-7B-hmW"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kEO-zo-Q0s">
+                                <rect key="frame" x="20" y="182" width="335" height="487"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="bottom" secondItem="AEs-Le-Ji3" secondAttribute="bottom" constant="80" id="3XU-yh-aOK"/>
-                            <constraint firstItem="HUf-Xv-ag2" firstAttribute="top" secondItem="AEs-Le-Ji3" secondAttribute="bottom" constant="30" id="67R-wb-B6P"/>
+                            <constraint firstItem="HUf-Xv-ag2" firstAttribute="trailing" secondItem="kEO-zo-Q0s" secondAttribute="trailing" id="3mt-HB-RZk"/>
+                            <constraint firstItem="kEO-zo-Q0s" firstAttribute="top" secondItem="5Qn-rN-eHe" secondAttribute="bottom" constant="30" id="8e7-AX-fPL"/>
                             <constraint firstItem="HUf-Xv-ag2" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="DQZ-qn-wFA"/>
                             <constraint firstItem="5Qn-rN-eHe" firstAttribute="top" secondItem="9Ww-g7-nwT" secondAttribute="top" constant="30" id="Iuv-Ob-lNO"/>
-                            <constraint firstItem="AEs-Le-Ji3" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="N4p-m6-gwK"/>
-                            <constraint firstItem="AEs-Le-Ji3" firstAttribute="top" secondItem="5Qn-rN-eHe" secondAttribute="bottom" constant="20" id="RRk-Gm-mWh"/>
+                            <constraint firstItem="HUf-Xv-ag2" firstAttribute="top" secondItem="kEO-zo-Q0s" secondAttribute="bottom" constant="59" id="JTI-6H-wi5"/>
+                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="bottom" secondItem="HUf-Xv-ag2" secondAttribute="bottom" constant="20" id="Lg9-m8-J6z"/>
                             <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="HUf-Xv-ag2" secondAttribute="trailing" constant="20" id="ScW-Lp-alZ"/>
-                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="AEs-Le-Ji3" secondAttribute="trailing" constant="20" id="fvX-GZ-E4y"/>
                             <constraint firstItem="5Qn-rN-eHe" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="lyQ-rm-K4N"/>
                             <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="5Qn-rN-eHe" secondAttribute="trailing" constant="20" id="rni-le-XXM"/>
+                            <constraint firstItem="HUf-Xv-ag2" firstAttribute="leading" secondItem="kEO-zo-Q0s" secondAttribute="leading" id="uOE-KX-mov"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ww-g7-nwT"/>
                     </view>
                     <navigationItem key="navigationItem" id="1lh-Dd-B3X"/>
                     <connections>
+                        <outlet property="StoryField" destination="kEO-zo-Q0s" id="LMS-F6-JuT"/>
                         <outlet property="publishButton" destination="HUf-Xv-ag2" id="7aJ-nt-cIY"/>
-                        <outlet property="strStoryContentField" destination="AEs-Le-Ji3" id="hF4-a9-ELt"/>
                         <outlet property="strStoryField" destination="5Qn-rN-eHe" id="5ua-O7-fDI"/>
                     </connections>
                 </viewController>
