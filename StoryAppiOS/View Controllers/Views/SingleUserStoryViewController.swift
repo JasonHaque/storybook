@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SingleUserStoryViewController: UIViewController {
 
@@ -35,6 +36,25 @@ class SingleUserStoryViewController: UIViewController {
     
 
     @IBAction func PublishTapped(_ sender: Any) {
+        let storyName = strStoryField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let storyContent = strStoryContentField.text!.trimmingCharacters(in: .newlines)
+        saveToAll(storyName, storyContent)
+    }
+    
+    func saveToAll(_ storyName:String,_ storyContent:String){
+        let ref = Database.database().reference()
+        let key = ref.child("Public Stories").childByAutoId().key
+        let email = (Auth.auth().currentUser?.email)!.split(separator: "@")
+        let user = String(email[0])
+        let storyData = [
+            "storyName" : storyName,
+            "storyContent" : storyContent,
+            "Author" : user,
+            "Id" : key
+        ]
+        ref.child("Public Stories").child(key!).setValue(storyData)
+        publishButton.isHidden = true
+        
         
     }
     
