@@ -15,6 +15,8 @@ class MyStoriesViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     var myStoryList = [MyStoryModel]()
     var storyTosend : String = ""
+    var storyNameTosend : String = ""
+    var storyPrivacyTosend :String = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myStoryList.count
@@ -33,12 +35,16 @@ class MyStoriesViewController: UIViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            let story = myStoryList[indexPath.row]
            storyTosend = story.storyContent!
+           storyNameTosend = story.storyName!
+           storyPrivacyTosend = story.privacy!
            self.performSegue(withIdentifier: "ShowSingle", sender: nil)
        }
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             
             let info = segue.destination as! SingleUserStoryViewController
-            //info.strStory = dataTosend
+            info.strStory = storyTosend
+            info.strName = storyNameTosend
+            info.strPrivacy = storyPrivacyTosend
         
         
        }

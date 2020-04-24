@@ -24,7 +24,12 @@ class SingleUserStoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         publishButton.isHidden = true
+        strStoryField.text = strName
+        strStoryContentField.text = strStory
         
+        if(strPrivacy == "Private"){
+            publishButton.isHidden = false
+        }
         
     }
     
