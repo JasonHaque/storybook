@@ -566,6 +566,9 @@
                         <viewLayoutGuide key="safeArea" id="9Ww-g7-nwT"/>
                     </view>
                     <navigationItem key="navigationItem" id="1lh-Dd-B3X"/>
+                    <connections>
+                        <outlet property="UserStory" destination="vXP-n2-2lK" id="UMq-VJ-r13"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TI-ah-cW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

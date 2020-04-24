@@ -14,6 +14,7 @@ class MyStoriesViewController: UIViewController,UITableViewDelegate,UITableViewD
     @IBOutlet weak var myStoryTableView: UITableView!
     
     var myStoryList = [MyStoryModel]()
+    var dataTosend : String = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myStoryList.count
@@ -29,6 +30,18 @@ class MyStoriesViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           let story = myStoryList[indexPath.row]
+           dataTosend = story.storyContent!
+           self.performSegue(withIdentifier: "ShowSingle", sender: nil)
+       }
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            let info = segue.destination as! SingleUserStoryViewController
+            info.strStory = dataTosend
+        
+        
+       }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
