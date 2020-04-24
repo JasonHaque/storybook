@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96299EDB2437A8FA00D3B73B /* AllStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96299EDA2437A8FA00D3B73B /* AllStoriesViewController.swift */; };
+		963B929324528E9B006F58AC /* SingleUserStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B929224528E9B006F58AC /* SingleUserStoryViewController.swift */; };
 		9644D79D24522AAD0093081E /* SinglePublicStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644D79C24522AAD0093081E /* SinglePublicStoryViewController.swift */; };
 		9647161F2434FC5E00B82DC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9647161E2434FC5E00B82DC0 /* GoogleService-Info.plist */; };
 		9649553B24366DB9000A2AE3 /* NewStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649553A24366DB9000A2AE3 /* NewStoryViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		96299EDA2437A8FA00D3B73B /* AllStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStoriesViewController.swift; sourceTree = "<group>"; };
+		963B929224528E9B006F58AC /* SingleUserStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserStoryViewController.swift; sourceTree = "<group>"; };
 		9644D79C24522AAD0093081E /* SinglePublicStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePublicStoryViewController.swift; sourceTree = "<group>"; };
 		9647161E2434FC5E00B82DC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9649553A24366DB9000A2AE3 /* NewStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoryViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				96299EDA2437A8FA00D3B73B /* AllStoriesViewController.swift */,
 				964C31E2245171B7006B300F /* MyStoriesViewController.swift */,
 				9644D79C24522AAD0093081E /* SinglePublicStoryViewController.swift */,
+				963B929224528E9B006F58AC /* SingleUserStoryViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				9653E7A12434991B00A22640 /* HomeViewController.swift in Sources */,
 				964C31DC2450F7A3006B300F /* ViewControllerTableViewCell.swift in Sources */,
 				964C31DE2450F901006B300F /* StoryModel.swift in Sources */,
+				963B929324528E9B006F58AC /* SingleUserStoryViewController.swift in Sources */,
 				964C31E3245171B7006B300F /* MyStoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
