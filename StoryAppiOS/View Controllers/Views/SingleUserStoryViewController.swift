@@ -41,6 +41,10 @@ class SingleUserStoryViewController: UIViewController {
         let storyName = strStoryField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let storyContent = StoryField.text!.trimmingCharacters(in: .newlines)
         saveToAll(storyName, storyContent)
+        let pickerOption = "Public"
+        let Id = strId!
+        saveStory(storyName, storyContent, pickerOption, Id)
+
     }
     
     
