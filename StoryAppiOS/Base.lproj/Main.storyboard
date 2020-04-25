@@ -572,6 +572,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Q-df-OcO">
                                 <rect key="frame" x="20" y="768" width="335" height="30"/>
                                 <state key="normal" title="Edit Later"/>
+                                <connections>
+                                    <action selector="EditLaterTapped:" destination="kaq-cm-2fh" eventType="touchUpInside" id="lou-ox-lc5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

@@ -38,6 +38,7 @@ class MyStoriesViewController: UIViewController,UITableViewDelegate,UITableViewD
            storyTosend = story.storyContent!
            storyNameTosend = story.storyName!
            storyPrivacyTosend = story.privacy!
+        storyIdTosend = story.Id!
            self.performSegue(withIdentifier: "ShowSingle", sender: nil)
        }
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

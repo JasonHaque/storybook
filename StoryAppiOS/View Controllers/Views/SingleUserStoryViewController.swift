@@ -29,7 +29,7 @@ class SingleUserStoryViewController: UIViewController {
         publishButton.isHidden = true
         strStoryField.text = strName
         StoryField.text = strStory
-        
+        print(strId!)
         if(strPrivacy == "Private"){
             publishButton.isHidden = false
         }
@@ -41,6 +41,17 @@ class SingleUserStoryViewController: UIViewController {
         let storyName = strStoryField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let storyContent = StoryField.text!.trimmingCharacters(in: .newlines)
         saveToAll(storyName, storyContent)
+    }
+    
+    
+    
+    @IBAction func EditLaterTapped(_ sender: Any) {
+        let storyName = strStoryField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let storyContent = StoryField.text!.trimmingCharacters(in: .newlines)
+        let pickerOption = "Private"
+        let Id = strId!
+        saveStory(storyName, storyContent, pickerOption, Id)
+        
     }
     
     func saveToAll(_ storyName:String,_ storyContent:String){
@@ -58,6 +69,22 @@ class SingleUserStoryViewController: UIViewController {
         publishButton.isHidden = true
         
         
+    }
+    
+    func saveStory(_ storyName:String,_ storyContent:String,_ pickerOption:String,_ Id :String){
+        let ref = Database.database().reference()
+        let email = (Auth.auth().currentUser?.email)!.split(separator: "@")
+        let user = String(email[0])
+        //let key = ref.child("StoryData").child(user).childByAutoId().key
+        let storyData = [
+            "storyName" : storyName,
+            "storyContent" : storyContent,
+            "privacy" : pickerOption,
+            "Id" : Id
+        ]
+        print(Id)
+        ref.child("StoryData").child(user).child(Id).setValue(storyData)
+        //ErrorLabel.text = "Data Saved"
     }
     
 
