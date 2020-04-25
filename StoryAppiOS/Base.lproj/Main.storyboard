@@ -562,26 +562,33 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kEO-zo-Q0s">
-                                <rect key="frame" x="20" y="182" width="335" height="487"/>
+                                <rect key="frame" x="20" y="182" width="335" height="466"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Q-df-OcO">
+                                <rect key="frame" x="20" y="768" width="335" height="30"/>
+                                <state key="normal" title="Edit Later"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="HUf-Xv-ag2" firstAttribute="top" secondItem="kEO-zo-Q0s" secondAttribute="bottom" constant="80" id="2wp-b2-gG7"/>
                             <constraint firstItem="HUf-Xv-ag2" firstAttribute="trailing" secondItem="kEO-zo-Q0s" secondAttribute="trailing" id="3mt-HB-RZk"/>
                             <constraint firstItem="kEO-zo-Q0s" firstAttribute="top" secondItem="5Qn-rN-eHe" secondAttribute="bottom" constant="30" id="8e7-AX-fPL"/>
                             <constraint firstItem="HUf-Xv-ag2" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="DQZ-qn-wFA"/>
                             <constraint firstItem="5Qn-rN-eHe" firstAttribute="top" secondItem="9Ww-g7-nwT" secondAttribute="top" constant="30" id="Iuv-Ob-lNO"/>
-                            <constraint firstItem="HUf-Xv-ag2" firstAttribute="top" secondItem="kEO-zo-Q0s" secondAttribute="bottom" constant="59" id="JTI-6H-wi5"/>
                             <constraint firstItem="9Ww-g7-nwT" firstAttribute="bottom" secondItem="HUf-Xv-ag2" secondAttribute="bottom" constant="20" id="Lg9-m8-J6z"/>
                             <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="HUf-Xv-ag2" secondAttribute="trailing" constant="20" id="ScW-Lp-alZ"/>
+                            <constraint firstItem="Q9Q-df-OcO" firstAttribute="top" secondItem="HUf-Xv-ag2" secondAttribute="bottom" constant="10" id="agI-Cl-3ze"/>
+                            <constraint firstItem="Q9Q-df-OcO" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="fdm-Ye-PQR"/>
                             <constraint firstItem="5Qn-rN-eHe" firstAttribute="leading" secondItem="9Ww-g7-nwT" secondAttribute="leading" constant="20" id="lyQ-rm-K4N"/>
                             <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="5Qn-rN-eHe" secondAttribute="trailing" constant="20" id="rni-le-XXM"/>
                             <constraint firstItem="HUf-Xv-ag2" firstAttribute="leading" secondItem="kEO-zo-Q0s" secondAttribute="leading" id="uOE-KX-mov"/>
+                            <constraint firstItem="9Ww-g7-nwT" firstAttribute="trailing" secondItem="Q9Q-df-OcO" secondAttribute="trailing" constant="20" id="vNU-m5-EUb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ww-g7-nwT"/>
                     </view>

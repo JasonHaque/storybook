@@ -22,6 +22,7 @@ class SingleUserStoryViewController: UIViewController {
     var strStory:String? = ""
     var strName : String? = ""
     var strPrivacy : String? = ""
+    var strId : String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

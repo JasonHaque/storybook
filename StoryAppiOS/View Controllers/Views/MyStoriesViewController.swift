@@ -17,6 +17,7 @@ class MyStoriesViewController: UIViewController,UITableViewDelegate,UITableViewD
     var storyTosend : String = ""
     var storyNameTosend : String = ""
     var storyPrivacyTosend :String = ""
+    var storyIdTosend : String = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myStoryList.count
@@ -45,6 +46,7 @@ class MyStoriesViewController: UIViewController,UITableViewDelegate,UITableViewD
             info.strStory = storyTosend
             info.strName = storyNameTosend
             info.strPrivacy = storyPrivacyTosend
+            info.strId = storyIdTosend
         
         
        }
