@@ -14,7 +14,9 @@ import FirebaseDatabase
 class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var StoryNameField: UITextField!
-    @IBOutlet weak var StoryContent: UITextField!
+   
+    
+    @IBOutlet weak var StoryContent: UITextView!
     @IBOutlet weak var ErrorLabel: UILabel!
     
     @IBOutlet weak var OptionPicker: UIPickerView!
@@ -25,6 +27,7 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         ErrorLabel.text = ""
+        StoryContent.text = "Story"
         pickerData = ["Public","Private"]
         
         OptionPicker.dataSource = self

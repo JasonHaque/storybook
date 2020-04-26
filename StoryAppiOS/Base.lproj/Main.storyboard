@@ -314,6 +314,7 @@
                     <connections>
                         <outlet property="ErrorLabel" destination="YKl-mR-V6I" id="j94-Bg-wiB"/>
                         <outlet property="OptionPicker" destination="zmx-Jo-Fxs" id="emc-KV-4mA"/>
+                        <outlet property="StoryContent" destination="bZ4-lP-k1d" id="0DI-ce-J3Y"/>
                         <outlet property="StoryNameField" destination="nfs-AS-A6I" id="y3a-TH-MRG"/>
                     </connections>
                 </viewController>
