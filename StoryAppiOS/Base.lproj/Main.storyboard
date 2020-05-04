@@ -228,6 +228,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Home" id="PyF-Ww-wsx">
+                                        <barButtonItem key="leftBarButtonItem" title="Log out" id="Ye0-zv-xMv">
+                                            <connections>
+                                                <action selector="LogoutBarTapped:" destination="A7U-bf-bYh" id="r2L-Gw-bEW"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fab-zN-zOe">
                                             <connections>
                                                 <segue destination="eh7-ba-KmJ" kind="show" id="cKa-c1-WTr"/>

@@ -19,7 +19,18 @@ class HomeViewController: UIViewController {
     }
     
     
-
+    @IBAction func LogoutBarTapped(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+            print("Signed out")
+            self.transitionStart()
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+    }
+    
     @IBAction func LogOutTapped(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do {
