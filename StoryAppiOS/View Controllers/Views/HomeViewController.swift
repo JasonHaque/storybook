@@ -31,17 +31,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @IBAction func LogOutTapped(_ sender: Any) {
-        let firebaseAuth = Auth.auth()
-        do {
-          try firebaseAuth.signOut()
-            print("Signed out")
-            self.transitionStart()
-        } catch let signOutError as NSError {
-          print ("Error signing out: %@", signOutError)
-        }
-        
-    }
+
     
     func transitionStart(){
         let homeView = storyboard?.instantiateViewController(identifier: "StartView") as? ViewController
