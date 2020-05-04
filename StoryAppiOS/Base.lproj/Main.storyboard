@@ -278,15 +278,8 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmx-Jo-Fxs">
-                                        <rect key="frame" x="0.0" y="282" width="335" height="282"/>
+                                        <rect key="frame" x="0.0" y="282" width="335" height="332"/>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQD-Fm-fnU">
-                                        <rect key="frame" x="0.0" y="584" width="335" height="30"/>
-                                        <state key="normal" title="Save"/>
-                                        <connections>
-                                            <action selector="SaveButtonTapped:" destination="eh7-ba-KmJ" eventType="touchUpInside" id="KuJ-Ax-5Vo"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKl-mR-V6I">
                                         <rect key="frame" x="0.0" y="634" width="335" height="20.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -304,7 +297,11 @@
                                                 <action selector="CancelTapped:" destination="eh7-ba-KmJ" id="q5C-DO-v1K"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="e0t-uf-4wv"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="e0t-uf-4wv">
+                                            <connections>
+                                                <action selector="SaveBarTapped:" destination="eh7-ba-KmJ" id="cuA-t9-che"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

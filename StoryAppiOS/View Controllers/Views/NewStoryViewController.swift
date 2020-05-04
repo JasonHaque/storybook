@@ -50,10 +50,8 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
            
        }
-    
-
-
-    @IBAction func SaveButtonTapped(_ sender: Any) {
+          
+    @IBAction func SaveBarTapped(_ sender: Any) {
         let storyName = StoryNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let storyContent = StoryContent.text!.trimmingCharacters(in: .whitespaces)
         
@@ -69,9 +67,7 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
         if(pickerOption == "Public"){
             saveToAll(storyName,storyContent)
         }
-        
     }
-      
     
     @IBAction func CancelTapped(_ sender: Any) {
         StoryNameField.text = ""
