@@ -71,12 +71,15 @@ class NewStoryViewController: UIViewController, UIPickerViewDataSource, UIPicker
         }
         
     }
-        @IBAction func ClearButtonTapped(_ sender: Any) {
+      
+    
+    @IBAction func CancelTapped(_ sender: Any) {
         StoryNameField.text = ""
         StoryContent.text = ""
         return
         
     }
+    
     
     func checkErrors(_ storyName:String,_ storyContent:String)-> String{
         if(storyName == "" || storyContent == ""){

@@ -259,7 +259,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-hw-s3Y">
-                                <rect key="frame" x="20" y="104" width="335" height="698.33333333333337"/>
+                                <rect key="frame" x="20" y="148" width="335" height="654.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Story Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfs-AS-A6I">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
@@ -270,7 +270,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bZ4-lP-k1d">
-                                        <rect key="frame" x="0.0" y="60" width="335" height="224"/>
+                                        <rect key="frame" x="0.0" y="60" width="335" height="202"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -278,24 +278,17 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmx-Jo-Fxs">
-                                        <rect key="frame" x="0.0" y="304" width="335" height="254"/>
+                                        <rect key="frame" x="0.0" y="282" width="335" height="282"/>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQD-Fm-fnU">
-                                        <rect key="frame" x="0.0" y="578" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="584" width="335" height="30"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="SaveButtonTapped:" destination="eh7-ba-KmJ" eventType="touchUpInside" id="KuJ-Ax-5Vo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLY-D4-nYO">
-                                        <rect key="frame" x="0.0" y="628" width="335" height="30"/>
-                                        <state key="normal" title="Clear"/>
-                                        <connections>
-                                            <action selector="ClearButtonTapped:" destination="eh7-ba-KmJ" eventType="touchUpInside" id="Sba-yb-jk8"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKl-mR-V6I">
-                                        <rect key="frame" x="0.0" y="678" width="335" height="20.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="634" width="335" height="20.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -303,10 +296,15 @@
                                 </subviews>
                             </stackView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaG-Ch-lbS">
-                                <rect key="frame" x="0.0" y="44" width="375" height="20"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="New Story" id="cil-8v-JtM">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Hxz-Go-Yjt"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Hxz-Go-Yjt">
+                                            <connections>
+                                                <action selector="CancelTapped:" destination="eh7-ba-KmJ" id="q5C-DO-v1K"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="e0t-uf-4wv"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -314,9 +312,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="jaG-Ch-lbS" firstAttribute="leading" secondItem="lie-vV-BD4" secondAttribute="leading" id="6vv-fb-M6P"/>
-                            <constraint firstItem="hVX-hw-s3Y" firstAttribute="top" secondItem="jaG-Ch-lbS" secondAttribute="bottom" constant="40" id="Ens-pb-1UW"/>
                             <constraint firstItem="jaG-Ch-lbS" firstAttribute="centerX" secondItem="hVX-hw-s3Y" secondAttribute="centerX" id="VoJ-D6-wLG"/>
-                            <constraint firstItem="hVX-hw-s3Y" firstAttribute="top" secondItem="lie-vV-BD4" secondAttribute="top" constant="60" id="f4W-zZ-Cj3"/>
+                            <constraint firstItem="hVX-hw-s3Y" firstAttribute="top" secondItem="jaG-Ch-lbS" secondAttribute="bottom" constant="60" id="cH7-kX-XrM"/>
                             <constraint firstAttribute="bottomMargin" secondItem="hVX-hw-s3Y" secondAttribute="bottom" constant="-24.333333333333371" id="hjQ-zj-h5G"/>
                             <constraint firstItem="lie-vV-BD4" firstAttribute="trailing" secondItem="hVX-hw-s3Y" secondAttribute="trailing" constant="20" id="nhp-ON-4n1"/>
                             <constraint firstItem="jaG-Ch-lbS" firstAttribute="top" secondItem="lie-vV-BD4" secondAttribute="top" id="yvd-a2-Lou"/>
