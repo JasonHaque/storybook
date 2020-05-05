@@ -94,9 +94,10 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		964C31DF2451707F006B300F /* Views */ = {
+		964C31DF2451707F006B300F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				964955392435FC03000A2AE3 /* Authentication */,
 				9649553A24366DB9000A2AE3 /* NewStoryViewController.swift */,
 				96B0DA652431297F00D68238 /* ViewController.swift */,
 				9653E7A02434991B00A22640 /* HomeViewController.swift */,
@@ -105,7 +106,7 @@
 				9644D79C24522AAD0093081E /* SinglePublicStoryViewController.swift */,
 				963B929224528E9B006F58AC /* SingleUserStoryViewController.swift */,
 			);
-			path = Views;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		964C31E02451709A006B300F /* Models */ = {
@@ -117,24 +118,34 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		964C31E1245170AC006B300F /* TableViewCells */ = {
+		964C31E1245170AC006B300F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				964C31DB2450F7A3006B300F /* ViewControllerTableViewCell.swift */,
 				964C31E4245173D9006B300F /* MyStoryTableViewCell.swift */,
 			);
-			path = TableViewCells;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		9653E79B2434917D00A22640 /* View Controllers */ = {
+		964E43F5246129FD0056F0FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				964C31E1245170AC006B300F /* TableViewCells */,
-				964C31E02451709A006B300F /* Models */,
-				964C31DF2451707F006B300F /* Views */,
-				964955392435FC03000A2AE3 /* Authentication */,
+				96B0DA6C2431298400D68238 /* LaunchScreen.storyboard */,
+				9647161E2434FC5E00B82DC0 /* GoogleService-Info.plist */,
+				96B0DA6A2431298400D68238 /* Assets.xcassets */,
+				96B0DA672431297F00D68238 /* Main.storyboard */,
 			);
-			path = "View Controllers";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9653E79B2434917D00A22640 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				964C31E1245170AC006B300F /* Views */,
+				964C31E02451709A006B300F /* Models */,
+				964C31DF2451707F006B300F /* Controllers */,
+			);
+			path = Src;
 			sourceTree = "<group>";
 		};
 		96B0DA552431297F00D68238 = {
@@ -158,13 +169,10 @@
 		96B0DA602431297F00D68238 /* StoryAppiOS */ = {
 			isa = PBXGroup;
 			children = (
-				9653E79B2434917D00A22640 /* View Controllers */,
+				964E43F5246129FD0056F0FD /* Resources */,
+				9653E79B2434917D00A22640 /* Src */,
 				96B0DA612431297F00D68238 /* AppDelegate.swift */,
 				96B0DA632431297F00D68238 /* SceneDelegate.swift */,
-				96B0DA672431297F00D68238 /* Main.storyboard */,
-				9647161E2434FC5E00B82DC0 /* GoogleService-Info.plist */,
-				96B0DA6A2431298400D68238 /* Assets.xcassets */,
-				96B0DA6C2431298400D68238 /* LaunchScreen.storyboard */,
 				96B0DA6F2431298400D68238 /* Info.plist */,
 			);
 			path = StoryAppiOS;
